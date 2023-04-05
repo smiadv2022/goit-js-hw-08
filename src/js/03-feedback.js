@@ -14,7 +14,6 @@ function onFormInput(event) {
       message: form.elements.message.value,
     };
     const formDataJson = JSON.stringify(formData);
-
     localStorage.setItem(STORAGE_KEY, formDataJson);
   } catch (e) {
     console.error('LocalStorage not supported 1');
